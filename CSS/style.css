@@ -1,0 +1,904 @@
+    body {
+      padding: 0;
+      margin: 0;
+      font-family: 'Cormorant Infant', serif;
+    }
+    
+    a {
+      text-decoration: none;
+    }
+    
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    
+    li {
+      list-style: none;
+    }
+    
+    menu {
+      margin: 0;
+      padding: 0;
+    }
+    
+    h3 {
+      margin: 0;
+    }
+    
+    nav {
+      width: 100%;
+    }
+    
+    .navigation {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .list {
+      list-style: none;
+      display: inline-block;
+      border: 1px solid transparent;
+      margin: 0 20px;
+      transition: 0.4s;
+    }
+    /* HEADER */
+    
+    .header {
+      position: relative;
+      display: flex;
+      height: 60px;
+      align-items: center;
+      background-color: #ffffff82;
+    }
+    
+    .list-item {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 700;
+      color: #000;
+    }
+    
+    .header__basket {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    
+    .header__cs {
+      line-height: 30px;
+      color: #000;
+    }
+    
+    .basketcsbox {
+      padding-left: 77px;
+      padding-right: 106px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .cs_box {
+      display: inline-block;
+      text-align: center;
+      border: 1px solid #A88C00;
+      border-radius: 3px;
+      width: 45px;
+      height: 30px;
+    }
+    
+    .list:hover {
+      transform: scale(1.1);
+      border-bottom: 1px solid #A88C00;
+    }
+    
+    .cs_box:hover {
+      background-color: rgba(128, 128, 128, 0.6);
+    }
+    
+    .title-box {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      align-items: center;
+      padding-top: 130px;
+      padding-bottom: 347px;
+    }
+    
+    .header_title {
+      font-weight: 500;
+      font-size: 58px;
+      text-transform: uppercase;
+      color: #515151;
+      text-align: center;
+      letter-spacing: 0.1em;
+    }
+    
+    .shopnow-link {
+      display: inline-block;
+      width: 207px;
+      height: 40px;
+      text-align: center;
+      background-color: #A88C00;
+      line-height: 40px;
+      color: #fff;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 3px;
+      text-transform: uppercase;
+      transition: ease-in-out 0.4s;
+    }
+    
+    .shopnow-link:hover {
+      color: #000;
+      background-color: #fff;
+    }
+    
+    .header-wrapper {
+      max-width: 1440px;
+      margin: 0 auto;
+      background-image: url(../img/desktopwallpapers.org.ua_21263.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    
+    .basket-icon {
+      transition: 0.3s;
+    }
+    
+    .burger-btn {
+      display: none;
+      position: absolute;
+      height: 20px;
+      width: 25px;
+      top: 52%;
+      left: 5%;
+    }
+    
+    .burger-btn_figure {
+      position: absolute;
+      width: 25px;
+      height: 3px;
+      background-color: #000;
+      top: 50%;
+    }
+    
+    .burger-btn::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 3px;
+      background-color: #000;
+      top: 100%;
+      transition: 0.3s;
+    }
+    
+    .burger-btn::before {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 3px;
+      background-color: #000;
+      top: 0%;
+      transition: 0.3s;
+    }
+    
+    .burger-btn:hover.burger-btn::after {
+      content: '';
+      position: absolute;
+      width: 13px;
+      height: 3px;
+      background-color: #000;
+      top: 72%;
+      transform: rotate(35deg);
+    }
+    
+    .burger-btn:hover.burger-btn::before {
+      content: '';
+      position: absolute;
+      width: 13px;
+      height: 3px;
+      background-color: #000;
+      top: 27%;
+      transform: rotate(-35deg);
+    }
+    
+    .burger-list {
+      padding-bottom: 10px;
+    }
+    
+    .burger-link {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    
+    .burger-link:hover {
+      color: #A88C00;
+    }
+    
+    .box {
+      max-width: 1440px;
+      height: 600px;
+      margin: 0 auto;
+    }
+    
+    .burger-box {
+      display: none;
+    }
+    
+    .box1 {
+      background-color: rgb(224, 31, 31);
+    }
+    
+    .box2 {
+      background-color: rgb(39, 65, 16);
+    }
+    
+    .box3 {
+      background-color: rgb(33, 137, 163);
+    }
+    
+    .box4 {
+      background-color: rgb(25, 85, 163);
+    }
+    
+    .box5 {
+      background-color: rgb(65, 15, 48);
+    }
+    /* production box */
+    
+    .production-box {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding-bottom: 60px;
+      padding-top: 50px;
+      position: relative;
+      background-color: #f9f8f4;
+      z-index: 10;
+    }
+    
+    .bottle-img {
+      width: 384px;
+      height: 580px;
+      position: absolute;
+      top: 50px;
+      right: 0px;
+      z-index: 20;
+    }
+    
+    .production-title {
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 179%;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    
+    .production-line {
+      width: 40px;
+      border-radius: 3px;
+      margin: 0 auto;
+      border: 2px solid #A88C00;
+      margin-bottom: 60px;
+    }
+    
+    .card-box__production {
+      text-align: center;
+    }
+    
+    .vine {
+      transition: 0.5s;
+      margin: 0 30px 0 30px;
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+      z-index: 30;
+      overflow: hidden;
+    }
+    
+    .vine-card-subtitle {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 179%;
+      text-align: center;
+      color: #515151;
+    }
+    
+    .vine-card-text {
+      font-size: 16px;
+      line-height: 86%;
+      text-align: center;
+      color: #515151;
+    }
+    
+    .vine-card-text2 {
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 179%;
+      text-align: center;
+      letter-spacing: 0.1em;
+      color: #A88C00;
+    }
+    
+    .card-vine-active {
+      position: absolute;
+    }
+    
+    .vine:hover .card-vine-active {
+      display: block;
+      box-sizing: border-box;
+      transition: 0.5s;
+      width: 269px;
+      height: 361px;
+      background-image: url(../img/Rectangle\ 2.png);
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      left: -30px;
+      box-shadow: 0px 4px 52px rgba(0, 0, 0, 0.2);
+      border-radius: 2px;
+      z-index: 100;
+      padding: 130px 20px 0 20px;
+      transform: rotate3d(1, 1, 1, 360deg);
+      overflow: hidden;
+    }
+    
+    .vine:hover {
+      overflow: unset;
+    }
+    
+    .production-btn {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 40px;
+      text-align: center;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #515151;
+      border: 1px solid #A88C00;
+      border-radius: 3px;
+      width: 207px;
+      height: 40px;
+      display: block;
+      margin: 100px auto 0;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      transition: 0.4s;
+    }
+    
+    .production-btn:hover {
+      background-color: #A88C00;
+      color: #fff;
+    }
+    /*about-us-box*/
+    
+    .about-us-box {
+      display: flex;
+      background-image: url(../img/Rectangle\ 5.1.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+    
+    .about-us-card1,
+    .about-us-card2 {
+      width: 50%;
+      text-align: center;
+      padding: 10px;
+    }
+    
+    .about-us-content {
+      width: 393px;
+      margin: 100px auto 50px auto;
+    }
+    
+    .about-us-title {
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 132%;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+    
+    .about-us-line {
+      width: 198px;
+      border: 2px solid #A88C00;
+      border-radius: 3px;
+      margin: 10px auto;
+    }
+    
+    .about-us-text {
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 141%;
+      letter-spacing: 0.2em;
+      color: #FFFFFF;
+      margin-top: 35px;
+    }
+    
+    .about-us-link {
+      margin-bottom: 35px;
+      text-transform: uppercase;
+    }
+    /* WHY OUR WINE */
+    
+    .why-box {
+      display: flex;
+      flex-direction: column;
+      background-color: #f9f8f4;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+    
+    .why-card-box {
+      display: flex;
+      justify-content: center;
+      margin: 60px 0;
+      flex-wrap: wrap;
+    }
+    
+    .why-img-top {
+      display: block;
+      margin: 70px auto 20px auto;
+    }
+    
+    .why-title {
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 179%;
+      text-align: center;
+      text-transform: uppercase;
+      color: #515151;
+    }
+    
+    .why-card {
+      width: 253px;
+      text-align: center;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    
+    .why-card-img {}
+    
+    .why-card-title {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 179%;
+      text-align: center;
+      color: #515151;
+    }
+    
+    .why-card-text {
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 141%;
+      /* or 17px */
+      text-align: center;
+      letter-spacing: 0.1em;
+    }
+    
+    .wine-club-box {
+      display: flex;
+      background-image: url(../img/image\ 29.2.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+    
+    .wine-club-content {
+      width: 400px;
+      margin: 70px auto 50px auto;
+    }
+    
+    .wine-club-title {
+      letter-spacing: 0.1em;
+    }
+    
+    .wine-club-line {
+      width: 132px;
+      border: 2px solid #A88C00;
+      border-radius: 3px;
+      margin: 10px auto;
+    }
+    
+    .wine-club-link {
+      margin-top: 18px;
+    }
+    
+    .news-box {
+      display: flex;
+      max-width: 1440px;
+      margin: 0 auto;
+      flex-direction: column;
+      padding-top: 116px;
+      background-image: url(../img/image777.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      box-sizing: border-box;
+    }
+    
+    .news-title {
+      text-align: center;
+    }
+    
+    .news-line {
+      width: 172px;
+      margin: 10px auto;
+    }
+    
+    .news-card-box {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .news-card {
+      width: 290px;
+      margin-left: 45px;
+      margin-right: 45px;
+    }
+    
+    .news-text {
+      margin-bottom: 60px;
+    }
+    
+    .news-btn {
+      margin: 100px auto 330px;
+    }
+    
+    .conection-box {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      max-width: 1440px;
+      margin: 0 auto;
+      background-image: url(../img/Rectangle\ 6.jpg);
+      padding-top: 86px;
+    }
+    
+    .conection-title {
+      color: #fff;
+      letter-spacing: 0.1em;
+    }
+    
+    .conection-line {
+      width: 86px;
+    }
+    
+    .conection-card-box {
+      margin-top: 40px;
+      padding-bottom: 64px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .conection-form {
+      width: 50%;
+    }
+    
+    .conection-info {
+      width: 350px;
+    }
+    
+    .info-title {
+      font-family: Cormorant Infant;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 132%;
+      margin-bottom: 10px;
+      letter-spacing: 0.1em;
+      color: #A88C00;
+    }
+    
+    .info-text {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 141%;
+      letter-spacing: 0.1em;
+      color: rgba(255, 255, 255, 0.91);
+    }
+    
+    .info-link {
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 141%;
+      letter-spacing: 0.1em;
+      color: #FFFFFF;
+      flex-basis: 50%;
+      line-break: 30px;
+    }
+    
+    .info-link2,
+    .info-link4 {
+      text-align: right;
+    }
+    
+    .info-link:hover {
+      color: #A88C00;
+    }
+    
+    .info-link-box {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    
+     ::-webkit-input-placeholder {
+      color: #fff;
+    }
+    
+     ::-moz-placeholder {
+      color: #fff;
+    }
+    
+     :-ms-input-placeholder {
+      color: #fff;
+    }
+    
+     :-o-input-placeholder {
+      color: #fff;
+    }
+    
+    input {
+      outline: none;
+    }
+    
+    textarea {
+      outline: none;
+      resize: none;
+    }
+    
+    .form-name {
+      background-color: transparent;
+      color: #fff;
+      border: none;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 141%;
+      letter-spacing: 0.1em;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      width: 238px;
+      line-height: 40px;
+      margin: 10px;
+    }
+    
+    .form-subject {
+      width: 500px;
+    }
+    
+    .form-message {
+      border: none;
+      background-color: transparent;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 141%;
+      letter-spacing: 0.1em;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      width: 500px;
+      margin: 10px;
+      color: #fff;
+    }
+    
+    .form-btn {
+      border: none;
+      margin-top: 70px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    
+    @media (min-width: 769px) and (max-width: 1200px) {
+      .header {
+        display: flex;
+        justify-content: center;
+      }
+      .basketcsbox {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .list-item {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 700;
+      }
+      .news-box {
+        padding: 0;
+      }
+      .news-title {
+        text-align: center;
+        margin-top: 60px;
+      }
+      .news-line {
+        margin: 10px auto;
+      }
+      .news-card-box {
+        display: flex;
+        margin-top: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .news-btn {
+        margin: 100px auto;
+      }
+      .news-card:nth-child(1) {
+        margin-left: 45px;
+      }
+      .list {
+        margin: 0 5px;
+      }
+      .basketcsbox {
+        flex-basis: 20%;
+      }
+      .navigation {
+        flex-wrap: wrap;
+      }
+      .bottle-img {
+        display: none;
+      }
+    }
+    
+    @media (min-width: 250px) and (max-width: 768px) {
+      .bottle-img {
+        display: none;
+      }
+      .cs_box {
+        display: none;
+      }
+      .navigation {
+        display: none;
+      }
+      .burger {
+        display: block;
+      }
+      .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+      }
+      .basketcsbox {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .header_title {
+        font-weight: 500;
+        font-size: 42px;
+        text-transform: uppercase;
+        color: #515151;
+        text-align: center;
+        letter-spacing: 0.1em;
+      }
+      .header__basket {
+        padding-right: 0;
+        padding-left: 0;
+        position: absolute;
+        position: absolute;
+        top: 52%;
+        left: 92%;
+      }
+      .burger-btn {
+        display: block;
+        position: absolute;
+        height: 20px;
+        width: 25px;
+        top: 0%;
+        left: 115%;
+      }
+      .title-box {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+        padding-top: 35px;
+        padding-bottom: 347px;
+      }
+      .basket-icon:hover {
+        width: 12px;
+      }
+      .burger-box {
+        display: block;
+        position: absolute;
+        left: -142px;
+        top: 16px;
+        border: 2px solid black;
+        padding: 10px;
+        background-color: #000;
+        transition: 0.3s;
+      }
+      .burger-box__open {
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 16px;
+        border: 2px solid black;
+        padding: 10px;
+        background-color: #000;
+        transition: 0.3s;
+      }
+      .burger-btn__open::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 3px;
+        background-color: #000;
+        top: 8px;
+        left: 146px;
+        transition: 0.3s;
+        transform: rotate(-45deg);
+      }
+      .burger-btn__open::before {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 3px;
+        background-color: #000;
+        top: 8px;
+        left: 145px;
+        transition: 0.3s;
+        transform: rotate(45deg);
+      }
+      .burger-btn_figure_open {
+        position: absolute;
+        width: 25px;
+        height: 3px;
+        background-color: #000;
+        top: 50%;
+        display: none;
+      }
+      .about-us-card2 {
+        width: 100%;
+        text-align: center;
+      }
+      .about-us-card1 {
+        display: none;
+      }
+      .about-us-content {
+        width: 100%;
+        margin: 140px auto 50px auto;
+        text-align: center;
+      }
+      .why-img-top {
+        display: block;
+        margin: 70px auto 20px auto;
+        width: 100%;
+      }
+      .wine-club-line,
+      .about-us-line {
+        margin: 10px auto;
+      }
+      .news-box {
+        padding: 0;
+      }
+      .news-title {
+        text-align: center;
+      }
+      .news-card-box {
+        display: flex;
+        margin-top: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .news-card:nth-child(1) {
+        margin-left: 45px;
+      }
+      .news-btn {
+        margin: 100px auto;
+      }
+      .conection-form {
+        width: 100%;
+      }
+      .form-subject,
+      .form-message {
+        width: 90%;
+      }
+    }
