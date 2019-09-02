@@ -141,6 +141,10 @@
       background-size: cover;
       background-repeat: no-repeat;
     }
+
+    .header_logo {
+      width: 100px;
+    }
     
     .basket-icon {
       transition: 0.3s;
@@ -227,25 +231,7 @@
       display: none;
     }
     
-    .box1 {
-      background-color: rgb(224, 31, 31);
-    }
     
-    .box2 {
-      background-color: rgb(39, 65, 16);
-    }
-    
-    .box3 {
-      background-color: rgb(33, 137, 163);
-    }
-    
-    .box4 {
-      background-color: rgb(25, 85, 163);
-    }
-    
-    .box5 {
-      background-color: rgb(65, 15, 48);
-    }
     /* production box */
     
     .production-box {
@@ -264,7 +250,7 @@
       position: absolute;
       top: 50px;
       right: 0px;
-      z-index: 20;
+      
     }
     
     .production-title {
@@ -284,7 +270,60 @@
     }
     
     .card-box__production {
+      display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+
+    .card-vine {
+      width: 205px;
+      height: 303px;
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 269px;
+      height: 361px;
+      perspective: 1000px;
+      cursor: pointer;
+      margin: 15px;
+    }
+    
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
       text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+    
+    .flip-card-front {
+      
+    }
+    
+    .flip-card-back {
+      
+    transform: rotateY(180deg);
+    background-image: url(../img/Rectangle\ 2.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     }
     
     .vine {
@@ -307,7 +346,7 @@
     
     .vine-card-text {
       font-size: 16px;
-      line-height: 86%;
+      width: 80%;
       text-align: center;
       color: #515151;
     }
@@ -347,6 +386,8 @@
     .vine:hover {
       overflow: unset;
     }
+
+   
     
     .production-btn {
       font-weight: bold;
@@ -385,12 +426,13 @@
     .about-us-card2 {
       width: 50%;
       text-align: center;
-      padding: 10px;
+      padding: 33px;
     }
     
     .about-us-content {
       width: 393px;
       margin: 100px auto 50px auto;
+      text-align: left;
     }
     
     .about-us-title {
@@ -406,7 +448,7 @@
       width: 198px;
       border: 2px solid #A88C00;
       border-radius: 3px;
-      margin: 10px auto;
+      margin: 10px 0;
     }
     
     .about-us-text {
@@ -421,7 +463,8 @@
     }
     
     .about-us-link {
-      margin-bottom: 35px;
+     margin-top: 20px;
+      margin-bottom: 20px;
       text-transform: uppercase;
     }
     /* WHY OUR WINE */
@@ -505,9 +548,8 @@
       width: 132px;
       border: 2px solid #A88C00;
       border-radius: 3px;
-      margin: 10px auto;
+      margin: 10px 0;
     }
-    
     .wine-club-link {
       margin-top: 18px;
     }
@@ -540,9 +582,16 @@
     
     .news-card {
       width: 290px;
-      margin-left: 45px;
-      margin-right: 45px;
-    }
+      margin-left: 35px;
+      margin-right: 35px;
+      cursor: pointer;
+      padding: 10px;
+      transition: all 0.4s;
+  }
+
+    .news-card:hover {
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    } 
     
     .news-text {
       margin-bottom: 60px;
@@ -709,6 +758,9 @@
         letter-spacing: 0.1em;
         font-weight: 700;
       }
+      .about-us-box {
+        background-position: right;
+      }
       .news-box {
         padding: 0;
       }
@@ -799,7 +851,7 @@
         flex-direction: column;
         margin: 0 auto;
         align-items: center;
-        padding-top: 35px;
+        padding-top: 105px;
         padding-bottom: 347px;
       }
       .basket-icon:hover {
@@ -856,16 +908,20 @@
         display: none;
       }
       .about-us-card2 {
-        width: 100%;
-        text-align: center;
+         width: 70%;
+         text-align: center;
+         margin: 0 auto;
       }
       .about-us-card1 {
         display: none;
       }
+      .about-us-box {
+        background-position: right;
+      }
       .about-us-content {
-        width: 100%;
-        margin: 140px auto 50px auto;
-        text-align: center;
+          width: 100%;
+          margin: 70px auto 50px auto;
+          text-align: center;
       }
       .why-img-top {
         display: block;
